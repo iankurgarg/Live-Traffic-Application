@@ -1,0 +1,60 @@
+//			HTTPResponse resp = null;
+//			URL url1 = new URL(query);
+//			HttpURLConnection con = (HttpURLConnection) url1.openConnection();
+//			con.setDoOutput(true);
+//			
+//
+//			try {
+//				URL url = new URL(query);
+//				final HTTPRequest req = new HTTPRequest(url, HTTPMethod.GET);
+//				
+//				URLFetchService FetchService = new URLFetchService() {
+//
+//					@Override
+//					public HTTPResponse fetch(URL url) throws IOException {
+//						// TODO Auto-generated method stub
+//						return null;
+//					}
+//
+//					@Override
+//					public HTTPResponse fetch(HTTPRequest request)
+//							throws IOException {
+//						// TODO Auto-generated method stub
+//						return null;
+//					}
+//
+//					@Override
+//					public Future<HTTPResponse> fetchAsync(URL url) {
+//						// TODO Auto-generated method stub
+//						return null;
+//					}
+//
+//					@Override
+//					public Future<HTTPResponse> fetchAsync(HTTPRequest request) {
+//						// TODO Auto-generated method stub
+//						return null;
+//					}
+//					
+//					
+//				};
+//
+//				try {
+//					resp = (FetchService.fetch(req));
+//				} catch (IOException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}					
+//
+//			} catch (MalformedURLException e1) {
+//				// TODO Auto-generated catch block
+//				e1.printStackTrace();
+//			}
+//			
+//		
+//			String response = resp.toString();
+//			try {
+//				result = new DirectionsResult(new JSONObject(response));
+//			} catch (JSONException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}

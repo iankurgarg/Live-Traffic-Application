@@ -1,0 +1,50 @@
+//		DistanceMatrixService DMService = DistanceMatrixService.create(); 
+//		DistanceMatrixRequest DMReq = DistanceMatrixRequest.create();
+//
+//
+//		JsArray<LatLng> origin = null;
+//		origin.setLength(1);
+//		JsArray<LatLng> destination = null;
+//		destination.setLength(1);
+//		final JsArray<LatLng> path = null;
+//		path.setLength(2);
+//		
+//		
+//		
+//		final DistanceServiceWrapper result = null;
+//
+//		for (int i = 0; i < overView.length - 1; i++) {
+//			
+//			origin.set(0, overView[i]);
+//			destination.set(0, overView[i+1]);			
+//			DMReq.setOrigins(origin);
+//			DMReq.setDestinations(destination);
+//			path.set(0, origin.get(0));
+//			path.set(1, destination.get(0));
+//			
+//			DMService.getDistanceMatrix(DMReq, new DistanceMatrixService.Callback() {
+//				
+//				@Override
+//				public void handle(DistanceMatrixResponse a, DistanceMatrixStatus b) {
+//					// TODO Auto-generated method stub
+//					double ETA = 0.0;
+//
+//					if(b == DistanceMatrixStatus.OK){
+//						DistanceMatrixResponseRow row;
+//						row = a.getRows().get(0);
+//						
+//						Distance dis = row.getElements().get(0).getDistance();
+//						Polyline l = Polyline.create();
+//						l.setPath(path);
+//						try {
+//							ETA = (dis.getValue()/getTrafficInfo(l)[0]);
+//						} catch (EntityNotFoundException e) {
+//							// TODO Auto-generated catch block
+//							e.printStackTrace();
+//						}
+//						result.setETA(result.getETA()+ETA);
+//					}
+//					
+//				}
+//			});
+//		}
